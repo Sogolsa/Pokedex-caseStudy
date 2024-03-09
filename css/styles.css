@@ -47,9 +47,13 @@ h3 {
 
 
 .middle1,
-.middle2,
-.middle3 {
+.middle2
+ {
     padding-top: 20px;
+    margin-right: 20px;
+}
+.middle3 {
+    padding-top: 150px;
 }
 
 .middle4,
@@ -60,8 +64,49 @@ h3 {
 .img5-text {
     padding-top: 90px;
 }
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10%;
+    margin-bottom: 20px;
+
+
+}
 
 .img1 {
+    float: left;
+    margin-right: 40px;
+    height: 500px;
+
+}
+
+.img2 {
+    float: right;
+}
+
+.img3 {
+    float: left;
+    margin-right: 40px;
+    padding-top: 50px;
+
+}
+
+.img4 {
+    float: right;
+}
+
+.img5 {
+    float: left;
+    margin-right: 40px;
+
+}
+/* .img1 {
     padding-top: 20px;
     float: left;
     width: 500px;
@@ -105,7 +150,7 @@ h3 {
     margin-right: 40px;
     border-radius: 10%;
     margin-top: 50px;
-}
+} */
 
 .button {
     border: none;
