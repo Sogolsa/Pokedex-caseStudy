@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Pokedex</title>
+    <link rel="shortcut icon" href="img/favicon-v2.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--Google font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div class="text-overlay">
+        <img src="img/pokemon-hero-img.jpg" class="hero_image" alt="A Pokemon Picture">
+        <div class="main-header">Pokédex App Case Study</div>
+        <div class="name-overlay">Sogol Saadat</div>
+    </div>
+    <section class="grid beginning">
+        <div class="grid_item">
+            <h3>Overview</h3>
+            <p>Pokédex app is a web application with HTML, CSS, and JavaScript that loads data from an external API and
+                enables
+                the viewing of data points in detail.</p>
+        </div>
+        <div class="grid_item">
+            <h3>Purpose and Context:</h3>
+            <p>This case study has been done as a personal project for Career Foundry web development program, to
+                showcase
+                how I
+                created the architecture of a JavaScript app, and how I test and debug the code.</p>
+        </div>
+        <div class="grid_item">
+            <h3>Objective</h3>
+            <p>The aim of the project was to build a web app so that users can view a list of data loaded from an
+                external
+                source (API) and see more details about a data item in a modal by clicking on them. I have focused on
+                the
+                core
+                principles of JavaScript like objects, arrays, conditionals, loops and functions, ensuring that the app
+                is
+                working in all necessary browsers.</p>
+        </div>
+        <div class="grid_item">
+            <h3>Duration</h3>
+            <p>It took me about 10 to 12 days to finish this project. I was able to finish it before the deadline.</p>
+        </div>
+        <div class="grid_item">
+
+            <h3>Credits</h3>
+            <p>In the development of the Pokémon JavaScript app, my role primarily focused on frontend development and
+                API
+                integration. I was responsible for designing and implementing the user interface using HTML, CSS, and
+                JavaScript.
+                <br>
+                Tutor: Jorge Armando Cortes Montiel
+                <br>
+                Mentor: Madhav Pokhrel
+            </p>
+        </div>
+        <div class="grid_item">
+            <h3>Tools, Skills, Methodologies</h3>
+            <ul>
+                <li>Visual Studio Code editor</li>
+                <li>CSS for styling</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+    <div>
+        <img src="img/case-study-code.png" class="img1">
+        <p class="middle1">I created a Pokémon JavaScript app that would allow users to explore an arranged list of
+            their
+            favorite
+            Pokémon.
+            My goal was to fetch data dynamically from the Pokémon API, presenting it in an engaging and user-friendly
+            interface.</p>
+        <h3>Step 1: IIFE (Immediately Invoked Function Expression)</h3>
+        <p>To ensure a clean structure, I employed the IIFE pattern to allow me to create a module to prevent any
+            potential conflicts of variable names between libraries and programs and provide a clear separation of
+            concerns.
+            This step lays the foundation for a scalable and maintainable codebase.
+        </p>
+        <h3>Step 2: Fetching Pokémon Data</h3>
+        <p>With the structural framework in place, the next logical step was to fetch Pokémon data from the official
+            Pokémon API. I limited the initial fetch to the first 150 Pokémon as original Pokémon series. I used fetch
+            for making asynchronous HTTP requests.</p>
+        <h3>Step 3: Asynchronous JavaScript with Promises</h3>
+        <p>I incorporated promises into the data fetching process for a readable asynchronous code flow. The loadList
+            function built with promises, ensures a smooth transition from initiating the data fetch to handling the
+            received JSON data.</p>
+        <br>
+        <img src="img/case-study-modal.png" class="img2">
+        <h3 class="middle2">Step 4: Enhancing Pokémon Details</h3>
+        <p>With loadDetails function I extended the app to fetch detailed information of Pokémon images, heights, and
+            types, to enhance the user experience.</p>
+        <h3>Step 5: Dynamic Modal for Pokémon Details</h3>
+        <p>To provide a clean way to display additional information, I added a dynamic modal that shows the Pokémon
+            information including their names, type, height, image, when clicked by a button. And the user can hide the
+            modal when the information is not needed.</p>
+        <h3>Step 6: Crafting the User Interface</h3>
+        <p>At this stage I utilized Bootstrap to build a visually appealing design, and have a responsive and
+            mobile-friendly app.</p>
+        <br>
+        <img src="img/error-handling.jpg" class="img3">
+        <h3 class="middle3">Step 7: Error Handling and User Feedback</h3>
+        <p>I implemented error handling to manage any issues during data retrieval, debugging, providing informative
+            error messages to the user and make the code easier to maintain and update.</p>
+    </div>
+    <br>
+    <br>
+    <div class="end">
+        <br>
+        <img src="img/case-study-app.png" class="img4">
+        <h3 class="middle4">Meeting The Objective</h3>
+        <p>The initial goal was to create a Pokémon JavaScript app that dynamically fetched data from the Pokémon API,
+            offering users exploration of their favorite Pokémon's. Looking back, the result met this objective. The app
+            shows a seamless interface providing users with nostalgic experience.
+        </p>
+        <h3>Challenges</h3>
+        <p>
+            Pokedex App was my first JavaScript project. Understanding how JavaScript interacts with the DOM to
+            manipulate HTML elements was something that I had to get used to.
+        <p>Something that specifically I encounter in this project involved implementing the modal. Each time I opened
+            the modal, the image was missing. I added some console logs and error handling to find where I had made
+            mistakes on my code. I had no errors showing on my console but still the image was missing. At the end I
+            realized that I had a small typo on my code. And the problem was solved.
+        </p>
+        <p>Throughout the development of Pokémon app, I gained confidence in my problem-solving skills and in my ability
+            to apply JavaScript
+            concepts into a real-world project. I was very satisfied with the result and ready to handle more
+            complex development projects.
+        </p>
+
+        </p>
+        <img src="img/loading-future.jpg" class="img5">
+        <h3 class="img5-text">Future</h3>
+        <p>
+            In the future, I would add loading indicators while loading data. And I would enhance error handling, to
+            show user-friendly error messages. Or I would add more detailed information about each Pokémon and expand
+            the app's features such as adding search functionality.
+            Overall, the Pokémon app project was a rewarding journey that not only met its objectives, but also provided
+            valuable insights into effective web development practices.
+            Checkout the Pokedex app:
+        </p>
+        <a href="https://sogolsa.github.io/js-app1-pokedex/" class="button" target="_blank">Checkout the Pokedex App</a>
+
+    </div>
+</body>
+
+</html>
